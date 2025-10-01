@@ -1,0 +1,20 @@
+[package]
+name = "kitty"
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+version.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+libc.workspace = true
+nix.workspace = true
+rustyline.workspace = true
+shlex.workspace = true
+
+[lib]
+name = "kitty"
+
+[[bin]]
+name = "kitty"
+path = "src/main.rs"

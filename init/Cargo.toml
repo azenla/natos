@@ -1,0 +1,20 @@
+[package]
+name = "init"
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+version.workspace = true
+
+[dependencies]
+libc.workspace = true
+nix.workspace = true
+shlex.workspace = true
+sys-mount.workspace = true
+walkdir.workspace = true
+
+[lib]
+name = "init"
+
+[[bin]]
+name = "init"
+path = "src/main.rs"

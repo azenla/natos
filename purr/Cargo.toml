@@ -1,0 +1,22 @@
+[package]
+name = "purr"
+edition.workspace = true
+license.workspace = true
+publish.workspace = true
+version.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+drm.workspace = true
+
+[dependencies.image]
+workspace = true
+default-features = false
+features = ["jpeg", "png"]
+
+[lib]
+name = "purr"
+
+[[bin]]
+name = "purr"
+path = "src/main.rs"

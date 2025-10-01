@@ -1,0 +1,7 @@
+target/
+
+# IDE
+.idea/
+.vscode/
+
+.DS_Store
